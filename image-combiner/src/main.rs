@@ -49,6 +49,7 @@ fn main()->Result<(),ImageDataErrors> {
     let combined_data = combine_images(image_1, image_2);
     
     let mut output = FloatingImage::new(image_1.width(), image_2.width(), args.output);
+    
     output.set_data(combined_data)?;
 
     image::save_buffer_with_format(output.name, &output.data, output.width, output.height, image::ColorType::Rgba8, image_format_1);
