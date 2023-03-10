@@ -1,0 +1,4 @@
+.env
+target/
+cargo.lock
+pgdata/

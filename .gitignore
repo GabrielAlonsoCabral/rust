@@ -2,3 +2,6 @@
 target/
 cargo.lock
 **/target
+.env
+**/.env/
+aws-cloudformation/**
