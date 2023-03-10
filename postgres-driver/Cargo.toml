@@ -1,0 +1,31 @@
+[package]
+name = "postgres-driver"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace]
+
+[lib]
+name = "utils"
+path = "src/utils.rs"
+
+[[bin]]
+name = "list"
+path = "src/list.rs"
+
+[[bin]]
+name = "seed"
+path = "src/seed.rs"
+
+
+[[bin]]
+name = "backup"
+path = "src/backup.rs"
+
+
+[dependencies]
+dotenv = "0.15.0"
+postgres = "0.19.4"
+
